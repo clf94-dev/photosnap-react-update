@@ -1,0 +1,55 @@
+.btnP {
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    position: relative;
+    left: -100px;
+    padding: 15px 10px;
+    width: 300%;
+    border: none;
+    cursor: pointer;
+}
+
+.btnP--primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btnP--outline {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+}
+
+.btnP--medium {
+    padding: 8px 20px;
+    font-size: 18px;
+}
+
+.btnP--large {
+    padding: 12px 26px;
+    font-size: 20px;
+    max-height: 100px;
+}
+
+.btnP--primary:hover {
+    transition: all 0.3s ease-out;
+    background: white;
+    color: #000;
+    border: 1px solid #000;
+    transition: 250ms;
+}
+
+.btnP--outline:hover {
+    transition: all 0.3s ease-out;
+    background-color: white;
+    color: #000;
+    transition: 250ms;
+}
+
+.btnP--wide {
+    padding: 12px 26px;
+    font-size: 24px !important;
+    width: 100% !important;
+}
