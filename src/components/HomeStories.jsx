@@ -13,10 +13,10 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 AOS.init();
 
-function HomeStories() {
+function HomeStories({home}) {
    
     return (
-        <div style={{backgroundColor:'black', paddingLeft:'10px'}}>
+        <div style={{backgroundColor:'black'}}>
             <Grid container direction='row' data-aos='fade-right' data-aos-duration='1500'  >
                 {HomeStoriesData.map(item => {
                     return (<HomeStoryCard
