@@ -435,6 +435,11 @@ body {
                     height: 500px;
                     text-align: center;
                     align-items: center !important;
+                    .btnP{
+                        position: relative;
+                        left: 0;
+                        width: 100%;
+                    }
                     & h3 {
                         font-size: 24px;
                         margin-bottom: 10px;

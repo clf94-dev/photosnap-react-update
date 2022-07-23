@@ -453,6 +453,11 @@ body {
   text-align: center;
   align-items: center !important;
 }
+.pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo .btnP {
+  position: relative;
+  left: 0;
+  width: 100%;
+}
 .pricing-section .pricing-wrapper .pricing-container .pricing-container-card .pricing-container-cardInfo h3 {
   font-size: 24px;
   margin-bottom: 10px;
