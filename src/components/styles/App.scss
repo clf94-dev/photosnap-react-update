@@ -193,24 +193,57 @@ body {
 }
 
 //----------------------Home Stories component---------------
-.story-cont {
-    .img-cont {
+.storiesGrid{
+    background-color: black;
+    margin-left:10px;
+}
+    .story-cont {
+        background-color: black;
+    color: white;
+    .storyCol{
+        width:100%;
+        height: fit-content;
+        .text-col {
+            padding:20px 0;
+            position: sticky;
+            bottom: 20px;
+          /*   margin-top: 350px; */
+            margin-left: 20px;
+            width: 270px;
+            color: $pureWhite;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            h4 {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            hr {
+                text-align: start;
+                color: $lightGrey;
+                width: 80%;
+                margin: 10px 0;
+            }
+        } 
         img {
             z-index: -1;
             width: 100%;
             @media screen and (max-width: 800px) {
-                width: 200%;
+                
                 &:hover {
                     scale: 1 !important;
                 }
             }
-            height: 100%;
+           /*  height: 100%; */
+           
             &:hover {
                 scale: 1.05;
             }
         }
     }
-    .text-col {
+    
+    /* .text-col {
         position: absolute;
         margin-top: 350px;
         margin-left: 40px;
@@ -229,7 +262,7 @@ body {
             width: 100%;
             margin: 10px auto;
         }
-    }
+    } */
 }
 
 //-----------------------Features section -----------------

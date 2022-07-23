@@ -55,14 +55,35 @@ function HomeStoryCard(props) {
 
     return (
 
-        <Grid item lg={3} sm={6} xs={12} className='story-cont' >
-            <Grid container direction='row'>
-
-                <Grid item lg={12} className='img-cont'>
+        <Grid item lg={3} md={3} sm={6} xs={12} className='story-cont' >
+            <Grid container direction='row' >
+                <div className='storyCol'>
+                {/* <Grid item xs={12} className='img-cont'> */}
                     <img src={HomeStoriesIMGD[props.index]}  srcSet={`${HomeStoriesIMGM[props.index]} 756w, ${HomeStoriesIMGD[props.index]} 1500w, ${HomeStoriesIMGD[props.index]} 1280w`} alt={props.alt}/>
-                </Grid>
-                <Grid item lg={12} className='text-col'>
-                    <h4>{props.date}</h4>
+                    <div className='text-col'>
+                        <h4>{props.date}</h4>
+                    <h3>
+                        {props.title}
+                    </h3>
+                    <h4>{props.author}</h4>
+                    <hr/>
+                    <Button buttonSize='btn--wide' buttonStyle={props.btnStyle} link={props.link}>
+                        <Grid container direction='row'>
+                            <Grid item xs={9}>
+                               READ STORY
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={Arrows[props.arrow]} alt="arrow"/>
+
+                            </Grid>
+                        </Grid>
+
+                    </Button>
+                    </div>
+              {/*   </Grid> */}
+                </div>
+               {/* <Grid item lg={12} className='text-col'>
+                     <h4>{props.date}</h4>
                     <h3>
                         {props.title}
                     </h3>
@@ -79,8 +100,8 @@ function HomeStoryCard(props) {
                             </Grid>
                         </Grid>
 
-                    </Button>
-                </Grid>
+                    </Button> 
+                </Grid>*/}
             </Grid>
         </Grid>
 
