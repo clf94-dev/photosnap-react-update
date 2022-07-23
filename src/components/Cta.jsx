@@ -15,8 +15,9 @@ function Cta() {
     return (
         <div>
             <Grid container className='cta-cont'>
-                <img src={CtaBGD}  srcSet={`${CtaBGM} 756w, ${CtaBGD} 1500w, ${CtaBGT} 1280w`}  alt="beta bag"/>
-
+                <div className='imgCta'>
+                    <img  src={CtaBGD}  srcset={`${CtaBGM} 756w, ${CtaBGD} 1500w, ${CtaBGT} 1280w`}  alt="beta bag"/>
+                </div>
                 <Grid container direction='row' className='cta-content'>
                     <Grid item md={6} xs={12}>
                         <h2>
