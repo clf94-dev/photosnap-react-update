@@ -33,7 +33,7 @@ function TopStory() {
                                 READ THE STORY
                             </Grid>
                             <Grid item xs={4}>
-                                <img src={ArrowL} alt="arrow"/>
+                                <img loading="lazy" src={ArrowL} alt="arrow"/>
 
                             </Grid>
                         </Grid>
@@ -42,7 +42,7 @@ function TopStory() {
 
                 </Grid>
                 <Grid item md={6} xs={12} className='img-col'>
-                    <img src={TopStoryIMG} srcSet={`${TopStoryIMGM} 756w, ${TopStoryIMG} 1500w, ${TopStoryIMGT} 1280w`} alt="moon of appalacia"/>
+                    <img loading="lazy" src={TopStoryIMG} srcSet={`${TopStoryIMGM} 756w, ${TopStoryIMG} 1500w, ${TopStoryIMGT} 1280w`} alt="moon of appalacia"/>
                 </Grid>
             </Grid>
         </div>

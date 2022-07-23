@@ -33,7 +33,7 @@ function HomeIntroCard(props) {
         <div>
             <Grid container direction='row' className={props.classes} data-aos='fade-up' data-aos-duration='1500'>
                 <Grid item lg={7} sm={5} xs={12} className='img-col'>
-                    <img src={IntroIMGD[props.index]} srcSet={`${IntroIMGM[props.index]} 756w, ${IntroIMGD[props.index]} 1500w, ${IntroIMGT[props.index]} 1280w`} alt=""/>
+                    <img loading="lazy" src={IntroIMGD[props.index]} srcSet={`${IntroIMGM[props.index]} 756w, ${IntroIMGD[props.index]} 1500w, ${IntroIMGT[props.index]} 1280w`} alt=""/>
                 </Grid>
                 <Grid item lg={5} sm={7} xs={12} className='text-col'>
                     <h2>
@@ -46,7 +46,7 @@ function HomeIntroCard(props) {
                                 {props.btn}
                             </Grid>
                             <Grid item xs={4}>
-                                <img src={Arrows[props.arrow]} alt="arrow"/>
+                                <img loading="lazy" src={Arrows[props.arrow]} alt="arrow"/>
 
                             </Grid>
                         </Grid>

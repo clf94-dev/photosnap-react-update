@@ -12,7 +12,7 @@ function Footer() {
         <div>
             <Grid container direction='row' className='footer-cont'>
                 <Grid item direction='column' md={3} xs={12}>
-                <img src={Logo} alt="logo"/> 
+                <img loading="lazy" src={Logo} alt="logo"/> 
 
                     <Grid direction='row' className='social-row'>
                         <i className='fab fa-facebook faceb fa-gradient'></i>
@@ -44,7 +44,7 @@ function Footer() {
                                 GET AN INVITE
                             </Grid>
                             <Grid item xs={4}>
-                                <img src={ArrowL} alt="arrow"/>
+                                <img loading="lazy" src={ArrowL} alt="arrow"/>
 
                             </Grid>
                         </Grid></Button>

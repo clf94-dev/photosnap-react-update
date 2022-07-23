@@ -16,7 +16,7 @@ function Cta() {
         <div>
             <Grid container className='cta-cont'>
                 <div className='imgCta'>
-                    <img  src={CtaBGD}  srcset={`${CtaBGM} 756w, ${CtaBGD} 1500w, ${CtaBGT} 1280w`}  alt="beta bag"/>
+                    <img loading="lazy"  src={CtaBGD}  srcset={`${CtaBGM} 756w, ${CtaBGD} 1500w, ${CtaBGT} 1280w`}  alt="beta bag"/>
                 </div>
                 <Grid container direction='row' className='cta-content'>
                     <Grid item md={6} xs={12}>
@@ -30,7 +30,7 @@ function Cta() {
                                     GET AN INVITE
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <img src={ArrowL} alt="arrow" />
+                                    <img loading="lazy" src={ArrowL} alt="arrow" />
 
                                 </Grid>
                             </Grid>

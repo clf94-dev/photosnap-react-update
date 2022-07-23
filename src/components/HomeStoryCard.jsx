@@ -59,7 +59,7 @@ function HomeStoryCard(props) {
             <Grid container direction='row' >
                 <div className='storyCol'>
                 {/* <Grid item xs={12} className='img-cont'> */}
-                    <img src={HomeStoriesIMGD[props.index]}  srcSet={`${HomeStoriesIMGM[props.index]} 756w, ${HomeStoriesIMGD[props.index]} 1500w, ${HomeStoriesIMGD[props.index]} 1280w`} alt={props.alt}/>
+                    <img loading="lazy" src={HomeStoriesIMGD[props.index]}  srcSet={`${HomeStoriesIMGM[props.index]} 756w, ${HomeStoriesIMGD[props.index]} 1500w, ${HomeStoriesIMGD[props.index]} 1280w`} alt={props.alt}/>
                     <div className='text-col'>
                         <h4>{props.date}</h4>
                     <h3>
@@ -73,7 +73,7 @@ function HomeStoryCard(props) {
                                READ STORY
                             </Grid>
                             <Grid item xs={3}>
-                                <img src={Arrows[props.arrow]} alt="arrow"/>
+                                <img loading="lazy" src={Arrows[props.arrow]} alt="arrow"/>
 
                             </Grid>
                         </Grid>
@@ -95,7 +95,7 @@ function HomeStoryCard(props) {
                                READ STORY
                             </Grid>
                             <Grid item xs={4}>
-                                <img src={Arrows[props.arrow]} alt="arrow"/>
+                                <img loading="lazy" src={Arrows[props.arrow]} alt="arrow"/>
 
                             </Grid>
                         </Grid>

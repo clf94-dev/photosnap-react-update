@@ -30,7 +30,7 @@ function IntroFeatPric(props) {
                     
                 </Grid>
                 <Grid item lg={7} sm={5} xs={12} className='img-col'>
-                    <img src={IntroImgD[props.index]} srcSet={`${IntroImgM[props.index]} 756w, ${IntroImgD[props.index]} 1500w, ${IntroImgT[props.index]} 1280w`} alt=""/>
+                    <img loading="lazy" src={IntroImgD[props.index]} srcSet={`${IntroImgM[props.index]} 756w, ${IntroImgD[props.index]} 1500w, ${IntroImgT[props.index]} 1280w`} alt=""/>
                 </Grid>
             </Grid>
         </div>

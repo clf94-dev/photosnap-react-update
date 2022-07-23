@@ -18,7 +18,7 @@ function FeatureCard(props) {
         
 
             <Grid item lg={4}  md={props.home? 4:6} sm={props.home? 6:12} xs={12} className='feat-card' data-aos='fade-up' data-aos-duration='1500' >
-                <img src={featIMGD[props.index]} alt=""/>
+                <img loading="lazy" src={featIMGD[props.index]} alt=""/>
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
 

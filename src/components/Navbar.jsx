@@ -14,7 +14,7 @@ const closeMobileMenu=(  )=> setClick(false);
             <div className="navbar-container">
                 <NavLink to="/" className='navbar-logo' onClick={closeMobileMenu}>
                  
-                <img src={Logo} alt="logo"/>  
+                <img loading="lazy" src={Logo} alt="logo"/>  
                 </NavLink>
                 <div className="menu-icon" onClick={handleClick}>
                     <i
